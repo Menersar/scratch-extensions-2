@@ -44,6 +44,26 @@ https://github.com/MrYsLab/s3onegpio
 
 https://github.com/Menersar/scratch-extensions
 
+### 1.2. WINDOWS 10, WINDOWS 11
+
+1. Optional: NodeJS deinstallieren.
+winget uninstall Node.js
+
+2. NodeJS-Version 16.0.0 installieren.
+winget install OpenJS.NodeJS --version 16.0.0
+
+3. Yarn installieren.
+winget install Yarn.Yarn
+
+4.  Den Module-Bundler webpack mit yarn installieren.
+(Hauptsächlich verwendet, um JavaScript-Dateien für Browsernutzung zu bündeln)
+yarn add webpack --dev
+
+
+cd scratch-gui && npm start
+
+
+
 
 ## 2. SCRATCH-PROJEKTE INSTALLIEREN
 		
