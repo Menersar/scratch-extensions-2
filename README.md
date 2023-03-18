@@ -1,14 +1,13 @@
 # VORWORT UND CREDITS
 
-Da ich bei allen Anleitungen und Dokumentationen zur Erstellung von Scratch-3-Erweiterungen auf diverse Probleme und Error, meist aufgrund diverser Paket-Inkompatibilitäten, gestoßen bin habe ich nach langer Eigenrecherche die folgende Anleitung zur Erstellung von Scratch-3-Erweiterungen zusammengetragen.
+Da ich bei allen Anleitungen und Dokumentationen zur Erstellung von Scratch-3-Erweiterungen auf diverse Probleme und Fehler, meist aufgrund diverser Paket-Inkompatibilitäten und veralteten Anleitungen, gestoßen bin, habe ich nach Eigenrecherche die folgende Anleitung zur Erstellung von Scratch-3-Erweiterungen zusammengetragen.
 
-Informationen zur Erstellung der Anleitung sind zum Großteil der folgenden Seite entnommen. <br />
+Den Großteil der Informationen zur Erstellung dieser Anleitung sind der folgenden Seite entnommen. <br />
 https://medium.com/@hiroyuki.osaki/how-to-develop-your-own-block-for-scratch-3-0-1b5892026421
 
 
-Als Grundlage für die Projekte scratch-vm und scratch-gui sowie für Tests mit den enthaltenen Scratch-Erweiterungen hat das folgende GitHub-Repository gedient. <br />
+Folgendes Repository wurde als Grundlage der Pakete `scratch-vm` und `scratch-gui` sowie für Tests neuer Scratch-Erweiterungen verwendet. <br />
 https://github.com/MrYsLab/s3onegpio
-
 
 # ANLEITUNG
 
@@ -17,152 +16,182 @@ https://github.com/MrYsLab/s3onegpio
 ### 1.1. RASPBERRY-PI-OS
 	
 - [ ] nvm-Verion-Manager installieren.	
-
-	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+```console
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+```
 
 - [ ] Optional: npm-Cache bereinigen und NodeJS und npm vom Sytem entfernen.
+```console
+sudo npm cache clean --force
+sudo apt remove nodejs npm
+```
 
-	sudo npm cache clean --force
-	sudo apt remove nodejs npm
-	
 - [ ] Node-Version-Manager und damit NodeJS-Version 16.0.0 und npm neu installieren.
+```console
+sudo npm install --global n
+sudo n 16.0.0
+```
 
-	sudo npm install --global n
-	sudo n 16.0.0
-
-- [ ] NodeJS-Version überprüfen. <br />
-(Ausgabe sollte nun v16.0.0 sein.)
-
-	node --version
+- [ ] Optional: NodeJS-Version überprüfen. <br />
+(Ausgabe sollte `v16.0.0` sein.)
+```console
+node --version
+```
 
 - [ ] yarn installieren. <br />
-(Oft wird npm, anstelle von yarn, verwendet aber mit yarn hat es bei mir ohne Error funktioniert.)
+(In vielen Anleitungen wird auch npm verwendet; bei mir hat yarn zuverlässig funktioniert.)
+```console
+sudo npm install --global yarn
+```
 
-	sudo npm install --global yarn
-
-- [ ] GitHub-Repository über folgenden Link herunterladen und entpacken.
-
+- [ ] GitHub-Repository über folgenden Link herunterladen und entpacken. <br />
 https://github.com/Menersar/scratch-extensions
 
 ### 1.2. WINDOWS 10, WINDOWS 11
 
-1. Optional: NodeJS deinstallieren.
+- [ ] Optional: NodeJS deinstallieren. <br />
+```console
 winget uninstall Node.js
+```
 
-2. NodeJS-Version 16.0.0 installieren.
+- [ ] NodeJS-Version 16.0.0 installieren. <br />
+```console
 winget install OpenJS.NodeJS --version 16.0.0
+```
 
-3. Yarn installieren.
+- [ ] Optional: NodeJS-Version überprüfen. <br />
+(Ausgabe sollte `v16.0.0` sein.)
+```console
+node --version
+```
+
+- [ ] yarn installieren. <br />
+(In vielen Anleitungen wird auch npm verwendet; bei mir hat yarn zuverlässig funktioniert.)
+```console
 winget install Yarn.Yarn
+```
 
-4.  Den Module-Bundler webpack mit yarn installieren.
-(Hauptsächlich verwendet, um JavaScript-Dateien für Browsernutzung zu bündeln)
+- [ ] webpack mit yarn installieren. <br />
+(Hauptsächlich verwendet, um JavaScript-Dateien für Browsernutzung zu bündeln.)
+```console
 yarn add webpack --dev
+```
 
-
-cd scratch-gui && npm start
-
-
-
+- [ ] GitHub-Repository über folgenden Link herunterladen und entpacken. <br />
+https://github.com/Menersar/scratch-extensions
 
 ## 2. SCRATCH-PROJEKTE INSTALLIEREN
 		
-Die Projekte scratch-vm und scratch-gui müssen zusammen modifiziert und kompiliert werden, deshalb sollten sie, über folgende Terminal-Befehle, verbunden werden. <br />
-(Das Projekt scratch-gui wird als Parent-Project festgelegt, scratch-vm wird mit dem Parent verbunden.)
+Installieren und Verbinden von scratch-vm und scratch-gui verbinden, um sie zusammen zu modifizieren und kompilieren. <br />
+(scratch-gui wird als Parent-Projekt festgelegt, scratch-vm wird mit dem Parent verbunden.)
 
-	cd scratch-extensions
-	cd scratch-vm 
-	cd yarn install 
-	cd yarn link
-	cd ..
-	cd scratch-gui 
-	yarn link scratch-vm 
-	yarn install
-		
+- [ ] Wechseln in den scratch-vm-Ordner.
+```console
+cd scratch-extensions
+cd scratch-vm
+```
+
+- [ ] scratch-vm installieren und als Ziel für das Verbinden festlegen.
+```console
+yarn install
+yarn link
+```
+
+- [ ] Wechseln in den scratch-gui-Ordner.
+```console
+cd ..
+cd scratch-gui 
+```
+
+- [ ] scratch-gui mit scratch-vm verbinden und installieren.
+```console
+yarn link scratch-vm 
+yarn install
+```
+
 ## 3. GUI STARTEN
-		
-- [ ] Wechseln in den scratch-gui-Ordner über folgende Terminal-Befehl.
-	
-	cd scratch-gui
 
-- [ ] Starten der Scratch-GUI über folgende Terminal-Befehl.
-	
-	yarn start
+- [ ] Wechseln in den scratch-gui-Ordner.
+```console	
+cd scratch-gui
+```
 
-Ist der Kompilierungsvorgang erfolgreich, wird folgendes im Terminal ausgegeben und der Scratch-Service startet.
+- [ ] Starten der Scratch-GUI.
+```console
+yarn start
+```
 
-	Compiled successfully.
+<br />
 
-Die Scratch-Oberfläche kann dann über folgende Adresse aufgerufen werden. <br />
+Bei erfolgreichem Kompilieren wird `Compiled successfully.` im Terminal ausgegeben und der Scratch-Service startet.
+
+## 4. GUI AUFRUFEN
+
+- [ ] Aufrufen der Scratch-Oberfläche über folgende Adresse. <br />
 http://localhost:8601
 
-Die Adresse der Scratch-Oberfläche wird unter anderem während des Kompilierungsvorgangs im Terminal, wie folgt, ausgegeben.
-	
-	Project is running at http://0.0.0.0:8601/
+<br />
 
-Ist das Kompilieren erfolgreich, werden Änderungen, wie neue Erweiterungen, übernommen und in der Scratch-GUI dargestellt.
+Die Adresse wird während des Kompilierens mit `Project is running at http://0.0.0.0:8601/` im Terminal ausgegeben.
 
-Das Speichern von Änderungen in den Projekten **scratch-vm** oder **scratch-gui** löst nun zudem automatisch einen erneute Kompilierungsvorgang aus. <br />
-(Solange der Scratch-Service auf http://0.0.0.0:8601/ läuft.)
+Änderungen, wie neue Erweiterungen, werden in der Scratch-GUI nach erfolgreichem Kompilieren übernommen und dargestellt.
 
+Speichern von Änderungen in `scratch-vm` oder `scratch-gui` löst einen Kompilierungsvorgang automatisch aus. <br />
+(Solange der Scratch-Service auf `http://0.0.0.0:8601/` läuft.)
 
-## 4. SCRATCH-BLOCK IMPLEMENTIEREN	
+## 5. SCRATCH-BLOCK IMPLEMENTIEREN	
 		
-Jede Extension kann einen oder mehrere Blöcke haben
+Jede Extension kann einen oder mehrere Blöcke besitzen.
 	
-- [ ] Einen Ordner in folgendem Pfad hinzufügen.
+- [ ] Neuen Ordner `scratch3_EXTENSION-NAME` in folgendem Pfad hinzufügen. <br />
+(Statt `EXTENSION-NAME` den Namen der neuen Erweiterung angeben.)
+```console
+scratch-vm/src/extensions/scratch3_EXTENSION-NAME
+```
 
-(Den Ordner scratch3_EXTENSION-NAME benennen; statt EXTENSION-NAME den Namen der neuen Erweiterung angeben.)
+- [ ] Neue Datei `index.js` in dem Ordner anlegen. <br />
+```console
+scratch-vm/src/extensions/scratch3_EXTENSION-NAME/index.js
+```
 
-	scratch-vm/src/extensions/scratch3_EXTENSION-NAME
+- [ ] Angeben und Definieren der Erweiterungs-Blöcke in der Datei.
 
+- [ ] Datei zur Implementierung des Erweiterungsmenüs öffnen.
+```console
+scratch-vm/src/extension-support/extension-manager.js
+```
 
-- [ ] In dem Ordner eine neue Datei, wie folgt, anlegen.
+- [ ] In der Datei die neue Erweiterung, über `EXTENSION-ID: () => require ('EXTENSION-RELATIVE-PATH')`, dem Projekt hinzuzufügen. <br />
+(Statt `EXTENSION-ID` die ID der neuen Extension (aus `index.js`) angeben.) <br />
+(Statt `EXTENSION-RELATIVE-PATH` den Pfad zu `scratch3_EXTENSION-NAME` angeben.)
+```console
+newblocks: () => require('../extensions/scratch3_EXTENSION-NAME')
+```
 
-(Die Datei index.js benennen.)
+## 6. GUI IMPLEMENTIEREN 
 
-	scratch-vm/src/extensions/scratch3_EXTENSION-NAME/index.js
+Zur Nutzung der neu implementierten Scratch-Erweiterung muss sie in die Erweiterungsbibliothek von Scratch hinzugefügt werden. <br />
 
-- [ ] In der Datei werden die Blöcke der Erweiterung angegeben und definiert.
+- [ ] Optional: Zur visuellen Darstellung der neuen Erweiterung in der Scratch-Bibliothek, Anlegen des Ordners `EXTENSION-NAME`. <br />
+(Statt `EXTENSION-NAME` den Namen der neuen Erweiterung angeben.) <br />
+```console
+scratch-gui/src/lib/libraries/extensions/EXTENSION-NAME
+```
 
-- [ ] Die Datei, die der Implementierung des Erweiterungsmenüs dient, zu finden unter folgendem Pfad, öffnen.
+- [ ] Optional: Platzieren der Bilddateien `EXTENSION-NAME.IMAGE-FORMAT` und `EXTENSION-NAME-small.IMAGE-FORMAT` im neuen Ordner. <br />
+(Hintergrund: `EXTENSION-NAME.IMAGE-FORMAT`, `600 x 372`; Icon: `EXTENSION-NAME-small.IMAGE-FORMAT`, `180 x 180`.) <br />
+(Statt `EXTENSION-NAME` Namen der neuen Erweiterung angeben.) <br />
+(Statt `IMAGE-FORMAT` Format der jeweiligen Bilddatei angeben; getestete Formate: `png`, `jpg` und `svg`.) <br />
+```console
+scratch-gui/src/lib/libraries/extensions/EXTENSION-NAME/EXTENSION-NAME-small.IMAGE-FORMAT
+scratch-gui/src/lib/libraries/extensions/EXTENSION-NAME/EXTENSION-NAME.IMAGE-FORMAT
+```
 
-	scratch-vm/src/extension-support/extension-manager.js
+- [ ] Öffnen der Datei `index.jsx`.	
+```console
+scratch-gui/src/lib/libraries/extensions/index.jsx
+```
 
-- [ ] In der Datei die neue Erweiterung, wie folgt, angeben und so dem Projekt als Erweiterung hinzufügen.
-Die Zeile EXTENSION-ID: () => require ('EXTENSION-RELATIVE-PATH') in der Datei hinzufügen. <br />
-(Statt EXTENSION-ID die ID der neuen Extension (aus index.js) angeben.) <br />
-(Statt EXTENSION-RELATIVE-PATH den Pfad zu scratch3_EXTENSION-NAME angeben.)
-
-	newblocks: () => require('../extensions/scratch3_EXTENSION-NAME')
-
-## 5. GUI IMPLEMENTIEREN 
-
-Der neu implementierte Scratch-Block muss noch in die Erweiterungsbibliothek von Scratch hinzugefügt werden.
+- [ ] Angeben notwendiger Informationen und Referenzen in der Datei zur Darstellung der neuen Erweiterung in der Scratch-Bibliothek.
 	
-- [ ] Um die Erweiterung mit einem Bild in der Erweiterungsbibliothek darzustellen einen Ordner wie folget, in dem angegebenen Pfad, hinzufügen.
-Den Ordner EXTENSION-NAME bennennen. <br />
-(Keine Pflicht, aber Erweiterung einfacher wiederzufinden.) <br />
-(Statt EXTENSION-NAME entsprechend den Namen der neuen Erweiterung angeben.)
-
-	scratch-gui/src/lib/libraries/extensions/EXTENSION-NAME
-
-- [ ] In den Ordner zwei Bilder, für die Darstellung der Erweiterung in der Scratch-Bibliothek, wie folgt platzieren.
-Die Größe der Bilddatei für den Hintergrund des Eintrags sollte 600 x 372, die Größe des Icons 180 x 180 betragen. <br />
-(Als Format habe ich png, jpg und svg auf korrekte Funktionsweise getestet.) <br />
-
-Die Bilddatei für den Hintergrund EXTENSION-NAME.IMAGE-FORMAT benennen, für das Icon EXTENSION-NAME-small.IMAGE-FORMAT. <br />
-(Keine Pflicht, aber Assets der Erweiterung einfacher wiederzufinden.) <br /> 
-(Statt EXTENSION-NAME den Namen der neuen Erweiterung angeben.) <br />
-(Statt IMAGE-FORMAT das entsprechende Format der jeweiligen Bilddatei der neuen Erweiterung angeben.)
-
-	scratch-gui/src/lib/libraries/extensions/EXTENSION-NAME/EXTENSION-NAME-small.IMAGE-FORMAT
-	scratch-gui/src/lib/libraries/extensions/EXTENSION-NAME/EXTENSION-NAME.IMAGE-FORMAT
-
-- [ ] Die Datei index.jsx, zu finden unter folgendem Pfad, öffnen.	
-	
-	scratch-gui/src/lib/libraries/extensions/index.jsx
-	
-- [ ] In der Datei alle notwendigen Informationen und Referenzen für die Darstellung der neuen Erweiterung in der Scratch-Bibliothek angeben.
-	
-- [ ] Die Scratch-GUI starten, siehe dazu 3 GUI starten.
+- [ ] Starten der Scratch-GUI.__
