@@ -13,7 +13,7 @@ https://github.com/MrYsLab/s3onegpio
 
 ## 1. ENTWICKLUNGSUMGEBUNG VORBEREITEN
 
-### 1.1. RASPBERRY-PI-OS
+### – RASPBERRY-PI-OS –
 	
 - [ ] nvm-Verion-Manager installieren.	
 ```console
@@ -39,7 +39,7 @@ node --version
 ```
 
 - [ ] yarn installieren. <br />
-(In vielen Anleitungen wird auch npm verwendet; bei mir hat yarn zuverlässig funktioniert.)
+(Viele Anleitungen verwenden `npm`; zuverlässig hat bei mir `yarn` funktioniert.)
 ```console
 sudo npm install --global yarn
 ```
@@ -47,7 +47,9 @@ sudo npm install --global yarn
 - [ ] GitHub-Repository über folgenden Link herunterladen und entpacken. <br />
 https://github.com/Menersar/scratch-extensions
 
-### 1.2. WINDOWS 10, WINDOWS 11
+---
+
+### – WINDOWS 10, 11 –
 
 - [ ] Optional: NodeJS deinstallieren. <br />
 ```console
@@ -194,4 +196,5 @@ scratch-gui/src/lib/libraries/extensions/index.jsx
 
 - [ ] Angeben notwendiger Informationen und Referenzen in der Datei zur Darstellung der neuen Erweiterung in der Scratch-Bibliothek.
 	
-- [ ] Starten der Scratch-GUI.__
+- [ ] [Starten der Scratch-GUI.](https://github.com/Menersar/scratch-extensions/edit/main/README.md#3-gui-starten)
+
