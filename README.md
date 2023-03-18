@@ -84,7 +84,7 @@ https://github.com/Menersar/scratch-extensions
 
 ## 2. SCRATCH-PROJEKTE INSTALLIEREN
 		
-Installieren und Verbinden von scratch-vm und scratch-gui verbinden, um sie zusammen zu modifizieren und kompilieren. <br />
+Installieren und Verbinden von scratch-vm und scratch-gui, um sie zusammen zu modifizieren und kompilieren zu können. <br />
 (scratch-gui wird als Parent-Projekt festgelegt, scratch-vm wird mit dem Parent verbunden.)
 
 - [ ] Wechseln in den scratch-vm-Ordner.
