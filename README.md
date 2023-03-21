@@ -170,7 +170,7 @@ scratch-vm/src/extensions/scratch3_EXTENSION-NAME/index.js
 
 - [ ] Angeben und Definieren der Erweiterungs-Blöcke in der Datei.
 
-- [ ] [Datei](/scratch-vm/src/extension-support/extension-manager.js) zur Implementierung des Erweiterungsmenüs öffnen.
+- [ ] Öffnen der Datei [extension-manager.js](/scratch-vm/src/extension-support/extension-manager.js) zur Implementierung des Erweiterungsmenüs.
 ```console
 scratch-vm/src/extension-support/extension-manager.js
 ```
@@ -186,15 +186,16 @@ EXTENSION-ID: () => require('../extensions/scratch3_EXTENSION-NAME')
 ## 6. GUI IMPLEMENTIEREN <a name="h6"></a>
 
 Zur Nutzung der neu implementierten Scratch-Erweiterung muss sie in die Erweiterungsbibliothek von Scratch hinzugefügt werden. <br />
-Otional können Bilddateien, zur visuellen Darstellung der neuen Erweiterung in der Scratch-Bibliothek, eingebunden werden. <br />
+Optional können Bilddateien, zur visuellen Darstellung der neuen Erweiterung in der Scratch-Bibliothek, eingebunden werden. <br />
+<br />
 
-- [ ] Optional: Ordner `EXTENSION-NAME` folgendem [Pfad](/scratch-gui/src/lib/libraries/extensions) hinzufügen. <br />
+- [ ] Optional: Hinzufügen des Ordners `EXTENSION-NAME` dem folgenden [Pfad](/scratch-gui/src/lib/libraries/extensions). <br />
 (Statt `EXTENSION-NAME` den Namen der neuen Erweiterung angeben.) <br />
 ```console
 scratch-gui/src/lib/libraries/extensions/EXTENSION-NAME
 ```
 
-- [ ] Optional: Bilddateien `EXTENSION-NAME.IMAGE-FORMAT` und `EXTENSION-NAME-small.IMAGE-FORMAT` im neuen Ordnder platzieren. <br />
+- [ ] Optional: Platzieren der Bilddateien `EXTENSION-NAME.IMAGE-FORMAT` und `EXTENSION-NAME-small.IMAGE-FORMAT` im neuen Ordnder. <br />
 (Hintergrund: `EXTENSION-NAME.IMAGE-FORMAT`, `600 x 372`; Icon: `EXTENSION-NAME-small.IMAGE-FORMAT`, `180 x 180`.) <br />
 (Statt `EXTENSION-NAME` Namen der neuen Erweiterung angeben.) <br />
 (Statt `IMAGE-FORMAT` Format der jeweiligen Bilddatei angeben; getestete Formate: `png`, `jpg` und `svg`.) <br />
@@ -203,7 +204,7 @@ scratch-gui/src/lib/libraries/extensions/EXTENSION-NAME/EXTENSION-NAME-small.IMA
 scratch-gui/src/lib/libraries/extensions/EXTENSION-NAME/EXTENSION-NAME.IMAGE-FORMAT
 ```
 
-- [ ] Öffnen der [Datei](scratch-gui/src/lib/libraries/extensions/index.jsx) `index.jsx`.	
+- [ ] Öffnen der Datei [index.jsx](scratch-gui/src/lib/libraries/extensions/index.jsx).	
 ```console
 scratch-gui/src/lib/libraries/extensions/index.jsx
 ```
