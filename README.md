@@ -211,4 +211,4 @@ scratch-gui/src/lib/libraries/extensions/index.jsx
 
 - [ ] Angeben notwendiger Informationen und Referenzen in der Datei zur Darstellung der neuen Erweiterung in der Scratch-Bibliothek.
 	
-- [ ] [Starten der Scratch-GUI.](https://github.com/Menersar/scratch-extensions/edit/main/README.md#3-gui-starten)
+- [ ] [Starten der Scratch-GUI.](https://github.com/Menersar/scratch-extensions#3-gui-starten-)
