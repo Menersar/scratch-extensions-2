@@ -125,7 +125,7 @@ yarn install
 
 ## 3. GUI STARTEN <a name="h3"></a>
 
-- [ ] Wechseln in den Ordner `scratch-gui`.
+- [ ] Wechseln in den Ordner [scratch-gui](/scratch-gui).
 ```console	
 cd scratch-gui
 ```
