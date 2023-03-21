@@ -67,6 +67,9 @@ import onegpioRoboHATInsetIconURL from './onegpioRoboHAT/onegpioRoboHAT-small.pn
 import onegpioRpiPicoImage from './onegpioRpiPico/onegpioRpiPico.png';
 import onegpioRpiPicoInsetIconURL from './onegpioRpiPico/onegpioRpiPico-small.png';
 
+import test1IconURL from './test1/test1.png';
+import test1InsetIconURL from './test/test1-small.svg';
+
 export default [
     {
         name: (
@@ -443,6 +446,21 @@ export default [
         internetConnectionRequired: true,
         bluetoothRequired: false,
         helpLink: 'https://mryslab.github.io/s3-extend/'
+
+    }
+    ,
+    {
+        name: 'Test 1',
+        extensionId: 'test1',
+        collaborator: "Maide",
+        iconURL: test1IconURL,
+        insetIconURL: test1InsetIconURL,
+        description: 'test1',
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: false,
+        bluetoothRequired: false,
+        helpLink: 'https://github.com/Menersar/scratch-extensions'
 
     }
 ];
