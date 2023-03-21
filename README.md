@@ -27,71 +27,71 @@ https://github.com/MrYsLab/s3onegpio
 
 ### – RASPBERRY-PI-OS – <a name="h1-1-1"></a>
 	
-- [ ] nvm-Verion-Manager installieren.	
+- [ ] Installieren des `nvm-Verion-Managers`.	
 ```console
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
 
-- [ ] Optional: npm-Cache bereinigen und NodeJS und npm vom Sytem entfernen.
+- [ ] Optional: Bereinigen des `npm-Cache` und Entfernen von `NodeJS` und `npm` vom System.
 ```console
 sudo npm cache clean --force
 sudo apt remove nodejs npm
 ```
 
-- [ ] Node-Version-Manager und damit NodeJS-Version 16.0.0 und npm neu installieren.
+- [ ] Installieren des `Node-Version-Manager` und damit Neuinstallieren der `NodeJS-Version 16.0.0` und `npm`.
 ```console
 sudo npm install --global n
 sudo n 16.0.0
 ```
 
-- [ ] Optional: NodeJS-Version überprüfen. <br />
+- [ ] Optional: Überprüfen der `NodeJS-Version`. <br />
 (Ausgabe sollte `v16.0.0` sein.)
 ```console
 node --version
 ```
 
-- [ ] yarn installieren. <br />
+- [ ] Installiernen von `yarn`. <br />
 (Viele Anleitungen verwenden `npm`; zuverlässig hat bei mir `yarn` funktioniert.)
 ```console
 sudo npm install --global yarn
 ```
 
-- [ ] GitHub-Repository über folgenden Link herunterladen und entpacken. <br />
+- [ ] Herunterladen und Entpacken des GitHub-Repositories `scratch-extension`. <br />
 https://github.com/Menersar/scratch-extensions
 
 ---
 
 ### – WINDOWS 10, 11 – <a name="h1-1-2"></a>
 
-- [ ] Optional: NodeJS deinstallieren. <br />
+- [ ] Optional: Deinstallieren von `NodeJS`. <br />
 ```console
 winget uninstall Node.js
 ```
 
-- [ ] NodeJS-Version 16.0.0 installieren. <br />
+- [ ] Installieren der `NodeJS-Version 16.0.0`. <br />
 ```console
 winget install OpenJS.NodeJS --version 16.0.0
 ```
 
-- [ ] Optional: NodeJS-Version überprüfen. <br />
+- [ ] Optional: Überprüfen der `NodeJS-Version`. <br />
 (Ausgabe sollte `v16.0.0` sein.)
 ```console
 node --version
 ```
 
-- [ ] yarn installieren. <br />
+- [ ] Installieren von `yarn`. <br />
 (In vielen Anleitungen wird auch npm verwendet; bei mir hat yarn zuverlässig funktioniert.)
 ```console
 winget install Yarn.Yarn
 ```
 
-- [ ] webpack mit yarn installieren. <br />
+- [ ] Installieren von `webpack` mit `yarn`. <br />
 (Hauptsächlich verwendet, um JavaScript-Dateien für Browsernutzung zu bündeln.)
 ```console
 yarn add webpack --dev
 ```
 
-- [ ] GitHub-Repository über folgenden Link herunterladen und entpacken. <br />
+- [ ] Herunterladen und Entpacken des GitHub-Repositories `scratch-extension`. <br />
 https://github.com/Menersar/scratch-extensions
 
 ## 2. SCRATCH-PAKETE INSTALLIEREN <a name="h2"></a>
@@ -99,25 +99,25 @@ https://github.com/Menersar/scratch-extensions
 Installieren und Verbinden von `scratch-vm` und `scratch-gui`, um sie zusammen zu modifizieren und kompilieren zu können. <br />
 (scratch-gui wird als Parent-Projekt festgelegt, scratch-vm wird mit dem Parent verbunden.)
 
-- [ ] Wechseln in den scratch-vm-Ordner.
+- [ ] Wechseln in den Ordner [scratch-vm](/scratch-vm).
 ```console
 cd scratch-extensions
 cd scratch-vm
 ```
 
-- [ ] scratch-vm installieren und als Ziel für das Verbinden festlegen.
+- [ ] Installieren von `scratch-vm` und Festlegen als Ziel für das Verbinden.
 ```console
 yarn install
 yarn link
 ```
 
-- [ ] Wechseln in den scratch-gui-Ordner.
+- [ ] Wechseln in den Ordner [scratch-gui](/scratch-gui).
 ```console
 cd ..
 cd scratch-gui 
 ```
 
-- [ ] scratch-gui mit scratch-vm verbinden und installieren.
+- [ ] Verbinden und Installieren von `scratch-gui` mit `scratch-vm`.
 ```console
 yarn link scratch-vm 
 yarn install
@@ -125,7 +125,7 @@ yarn install
 
 ## 3. GUI STARTEN <a name="h3"></a>
 
-- [ ] Wechseln in den scratch-gui-Ordner.
+- [ ] Wechseln in den Ordner `scratch-gui`.
 ```console	
 cd scratch-gui
 ```
@@ -157,25 +157,25 @@ Speichern von Änderungen in `scratch-vm` oder `scratch-gui` löst einen Kompili
 		
 Jede Extension kann einen oder mehrere Blöcke besitzen.
 	
-- [ ] Neuen Ordner `scratch3_EXTENSION-NAME` in folgendem Pfad hinzufügen. <br />
+- [ ] Hinzufügen des Ordners `scratch3_EXTENSION-NAME` dem folgenden [Pfad](/scratch-vm/src/extensions). <br />
 (Statt `EXTENSION-NAME` den Namen der neuen Erweiterung angeben.)
 ```console
 scratch-vm/src/extensions/scratch3_EXTENSION-NAME
 ```
 
-- [ ] Neue Datei `index.js` in dem Ordner anlegen. <br />
+- [ ] Anlegen der Datei `index.js` in dem Ordner. <br />
 ```console
 scratch-vm/src/extensions/scratch3_EXTENSION-NAME/index.js
 ```
 
 - [ ] Angeben und Definieren der Erweiterungs-Blöcke in der Datei.
 
-- [ ] Datei zur Implementierung des Erweiterungsmenüs öffnen.
+- [ ] [Datei](/scratch-vm/src/extension-support/extension-manager.js) zur Implementierung des Erweiterungsmenüs öffnen.
 ```console
 scratch-vm/src/extension-support/extension-manager.js
 ```
 
-- [ ] In der Datei die neue Erweiterung, über `EXTENSION-ID: () => require ('EXTENSION-RELATIVE-PATH')`, dem Projekt hinzuzufügen. <br />
+- [ ] Hinzufügen der neuen Erweiterung dem Projekt, über `EXTENSION-ID: () => require ('EXTENSION-RELATIVE-PATH')`, in der Datei. <br />
 (Statt `EXTENSION-ID` die ID der neuen Extension (aus `index.js`) angeben.) <br />
 (Statt `EXTENSION-RELATIVE-PATH` den Pfad zu `scratch3_EXTENSION-NAME` angeben.) <br />
 (Statt `EXTENSION-NAME` den Namen der neuen Erweiterung angeben.)
@@ -186,14 +186,15 @@ EXTENSION-ID: () => require('../extensions/scratch3_EXTENSION-NAME')
 ## 6. GUI IMPLEMENTIEREN <a name="h6"></a>
 
 Zur Nutzung der neu implementierten Scratch-Erweiterung muss sie in die Erweiterungsbibliothek von Scratch hinzugefügt werden. <br />
+Otional können Bilddateien, zur visuellen Darstellung der neuen Erweiterung in der Scratch-Bibliothek, eingebunden werden. <br />
 
-- [ ] Optional: Zur visuellen Darstellung der neuen Erweiterung in der Scratch-Bibliothek, Anlegen des Ordners `EXTENSION-NAME`. <br />
+- [ ] Optional: Ordner `EXTENSION-NAME` folgendem [Pfad](/scratch-gui/src/lib/libraries/extensions) hinzufügen. <br />
 (Statt `EXTENSION-NAME` den Namen der neuen Erweiterung angeben.) <br />
 ```console
 scratch-gui/src/lib/libraries/extensions/EXTENSION-NAME
 ```
 
-- [ ] Optional: Platzieren der Bilddateien `EXTENSION-NAME.IMAGE-FORMAT` und `EXTENSION-NAME-small.IMAGE-FORMAT` im neuen Ordner. <br />
+- [ ] Optional: Bilddateien `EXTENSION-NAME.IMAGE-FORMAT` und `EXTENSION-NAME-small.IMAGE-FORMAT` im neuen Ordnder platzieren. <br />
 (Hintergrund: `EXTENSION-NAME.IMAGE-FORMAT`, `600 x 372`; Icon: `EXTENSION-NAME-small.IMAGE-FORMAT`, `180 x 180`.) <br />
 (Statt `EXTENSION-NAME` Namen der neuen Erweiterung angeben.) <br />
 (Statt `IMAGE-FORMAT` Format der jeweiligen Bilddatei angeben; getestete Formate: `png`, `jpg` und `svg`.) <br />
@@ -202,7 +203,7 @@ scratch-gui/src/lib/libraries/extensions/EXTENSION-NAME/EXTENSION-NAME-small.IMA
 scratch-gui/src/lib/libraries/extensions/EXTENSION-NAME/EXTENSION-NAME.IMAGE-FORMAT
 ```
 
-- [ ] Öffnen der Datei `index.jsx`.	
+- [ ] Öffnen der [Datei](scratch-gui/src/lib/libraries/extensions/index.jsx) `index.jsx`.	
 ```console
 scratch-gui/src/lib/libraries/extensions/index.jsx
 ```
