@@ -38,7 +38,7 @@ sudo npm cache clean --force
 sudo apt remove nodejs npm
 ```
 
-- [ ] Installieren des Version-Managers von Node, `n`, und damit Neuinstallieren von `NodeJS v16.0.0`.
+- [ ] Installieren des `npm`-Version-Managers, `n`, und damit Neuinstallieren von `NodeJS v16.0.0`.
 ```console
 sudo npm install --global n
 sudo n 16.0.0
