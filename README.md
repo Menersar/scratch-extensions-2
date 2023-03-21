@@ -27,31 +27,31 @@ https://github.com/MrYsLab/s3onegpio
 
 ### – RASPBERRY-PI-OS – <a name="h1-1-1"></a>
 	
-- [ ] Installieren des `nvm-Verion-Managers`.	
+- [ ] Installieren des `nvm`-Version-Managers.	
 ```console
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
 
-- [ ] Optional: Bereinigen des `npm-Cache` und Entfernen von `NodeJS` und `npm` vom System.
+- [ ] Optional: Bereinigen des `npm`-Cache und Entfernen von `NodeJS` und `npm` vom System.
 ```console
 sudo npm cache clean --force
 sudo apt remove nodejs npm
 ```
 
-- [ ] Installieren des `Node-Version-Manager` und damit Neuinstallieren der `NodeJS-Version 16.0.0` und `npm`.
+- [ ] Installieren des Version-Managers von Node, `n`, und damit Neuinstallieren von `NodeJS v16.0.0`.
 ```console
 sudo npm install --global n
 sudo n 16.0.0
 ```
 
-- [ ] Optional: Überprüfen der `NodeJS-Version`. <br />
-(Ausgabe sollte `v16.0.0` sein.)
+- [ ] Optional: Überprüfen der `NodeJS`-Version. <br />
+(Ausgabe sollte `v16.0.0` zurückgeben.)
 ```console
 node --version
 ```
 
 - [ ] Installiernen von `yarn`. <br />
-(Viele Anleitungen verwenden `npm`; zuverlässig hat bei mir `yarn` funktioniert.)
+(Viele Anleitungen verwenden `npm`; zuverlässig hat es bei mir mit `yarn` funktioniert.)
 ```console
 sudo npm install --global yarn
 ```
@@ -68,19 +68,19 @@ https://github.com/Menersar/scratch-extensions
 winget uninstall Node.js
 ```
 
-- [ ] Installieren der `NodeJS-Version 16.0.0`. <br />
+- [ ] Installieren von `NodeJS v16.0.0`. <br />
 ```console
 winget install OpenJS.NodeJS --version 16.0.0
 ```
 
-- [ ] Optional: Überprüfen der `NodeJS-Version`. <br />
-(Ausgabe sollte `v16.0.0` sein.)
+- [ ] Optional: Überprüfen der `NodeJS`-Version. <br />
+(Ausgabe sollte `v16.0.0` zurückgeben.)
 ```console
 node --version
 ```
 
 - [ ] Installieren von `yarn`. <br />
-(In vielen Anleitungen wird auch npm verwendet; bei mir hat yarn zuverlässig funktioniert.)
+(Viele Anleitungen verwenden `npm`; zuverlässig hat es bei mir mit `yarn` funktioniert.)
 ```console
 winget install Yarn.Yarn
 ```
