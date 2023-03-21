@@ -177,9 +177,10 @@ scratch-vm/src/extension-support/extension-manager.js
 
 - [ ] In der Datei die neue Erweiterung, über `EXTENSION-ID: () => require ('EXTENSION-RELATIVE-PATH')`, dem Projekt hinzuzufügen. <br />
 (Statt `EXTENSION-ID` die ID der neuen Extension (aus `index.js`) angeben.) <br />
-(Statt `EXTENSION-RELATIVE-PATH` den Pfad zu `scratch3_EXTENSION-NAME` angeben.)
-```console
-newblocks: () => require('../extensions/scratch3_EXTENSION-NAME')
+(Statt `EXTENSION-RELATIVE-PATH` den Pfad zu `scratch3_EXTENSION-NAME` angeben.) <br />
+(Statt `EXTENSION-NAME` den Namen der neuen Erweiterung angeben.)
+```javascript
+EXTENSION-NAME: () => require('../extensions/scratch3_EXTENSION-NAME')
 ```
 
 ## 6. GUI IMPLEMENTIEREN <a name="h6"></a>
