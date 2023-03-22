@@ -279,30 +279,32 @@ Durch Ausführen des Blocks soll der mitgegebene String in der Konsole ausgegebe
 
 ## 2. SCRATCH-ERWEITERUNG VERWENDEN <a name="h2-2"></a>
 - [ ] [Starten der Scratch-GUI.](#h1-2-2) <br />
-![exampleExtension-guiStartenCommand.png](/images/exampleExtension-guiStartenCommand.png)
-![exampleExtension-guiStartenOutput.png](/images/exampleExtension-guiStartenOutput.png)
+<img src="images/exampleExtension-guiStartenCommand.png" width="400">
+<img src="/images/exampleExtension-guiStartenOutput.png" width="400">
 
 - [ ] [Aufrufen der Scratch-GUI.](#h1-2-3) <br />
-![exampleExtension-guiAufrufen.png](/images/exampleExtension-guiAufrufen.png)
+<img src="/images/exampleExtension-guiAufrufen.png" width="500">
+
+<img src="/images/exampleExtension-guiAufrufen.png" onmouseover="this.src='/images/exampleExtension-blockGUI.png'" onmouseout="this.src='/images/exampleExtension-guiAufrufen.png'" /> 
 
 - [ ] Klicken des Buttons, welcher die Scratch-Erweiterungs-Bibliothek öffnet. <br />
-![exampleExtension-libraryButton.png](/images/exampleExtension-libraryButton.png)
+<img src="/images/exampleExtension-libraryButton.png" width="400">
 
 - [ ] Auswählen der Erweiterung in der Bibliothek. <br />
-![exampleExtension-blockLibrary.png](/images/exampleExtension-blockLibrary.png)
+<img src="/images/exampleExtension-blockLibrary.png" width="400">
 
 - [ ] Ziehen des Blocks der Erweiterung auf die Scratch-Block-Oberfläche in der Scratch-GUI. <br />
-![exampleExtension-blockGUI.png](/images/exampleExtension-blockGUI.png)
+<img src="/images/exampleExtension-blockGUI.png" width="400">
 
 - [ ] Optional: Eingeben eines alternativen String über das Textfeld des Blocks. <br />
-![exampleExtension-blockImplementation.png](/images/exampleExtension-blockImplementation.png)
+<img src="/images/exampleExtension-blockImplementation.png" width="400">
 
 - [ ] Hinzufügen eines Ereignisses, um die Funktion des Blocks auszuführen. <br />
-![exampleExtension-blockImplementationEvent.png](/images/exampleExtension-blockImplementationEvent.png)
+<img src="/images/exampleExtension-blockImplementationEvent.png" width="400">
 
 - [ ] Auslösen des Ereignisses. <br />
-![exampleExtension-runButton.png](/images/exampleExtension-runButton.png)
+<img src="/images/exampleExtension-runButton.png" width="400">
 
 - [ ] Optional: Öffnen der Konsole und Überprüfen der Ausgabe. <br />
 (Sollte mit dem String des Blocks übereinstimmen; in diesem Fall `exampleExtension`.) <br />
-![exampleExtension-consoleOutput.png](/images/exampleExtension-consoleOutput.png)
+<img src="/images/exampleExtension-consoleOutput.png" width="400">
