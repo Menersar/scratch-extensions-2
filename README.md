@@ -262,7 +262,7 @@ Beim Ausführen des Blocks wird der mitgegebene String in der Konsole ausgegeben
 ## 2. SCRATCH-ERWEITERUNG VERWENDEN <a name="h2-2"></a>
 - [ ] [Starten der Scratch-GUI.](#h1-2-2)
 
-- [ ] [Aufrufen der Scratch-GUI.](#h1-2-2)
+- [ ] [Aufrufen der Scratch-GUI.](#h1-2-3)
 
 - [ ] Klicken auf den Button, welcher die Scratch-Erweiterungs-Bibliothek öffnet. <br />
 ![exampleExtension-libraryButton.png](/images/exampleExtension-libraryButton.png)
