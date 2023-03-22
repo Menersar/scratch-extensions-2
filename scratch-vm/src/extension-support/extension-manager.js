@@ -31,7 +31,7 @@ const builtinExtensions = {
     onegpioCpx: () => require('../extensions/scratch3_onegpioCpx'),
     onegpioRoboHAT: () => require('../extensions/scratch3_onegpioRoboHAT'),
     onegpioRpiPico: () => require('../extensions/scratch3_onegpioRpiPico'),
-    test1: () => require('../extensions/scratch3_test1')
+    exampleExtension: () => require('../extensions/scratch3_exampleExtension')
 
 
 

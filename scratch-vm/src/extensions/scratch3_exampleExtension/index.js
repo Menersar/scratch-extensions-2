@@ -3,15 +3,15 @@ const BlockType = require('../../extension-support/block-type');
 const Cast = require('../../util/cast');
 const log = require('../../util/log');
 
-class Scratch3Test1 {
+class Scratch3ExampleExtension {
     constructor (runtime) {
         this.runtime = runtime;
     }
 
     getInfo () {
         return {
-            id: 'test1',
-            name: 'Test 1',
+            id: 'exampleExtension',
+            name: 'Example Extension',
             blocks: [
                 {
                     opcode: 'writeLog',
@@ -36,4 +36,4 @@ class Scratch3Test1 {
     }
 }
 
-module.exports = Scratch3Test1;
+module.exports = Scratch3ExampleExtension;

@@ -67,8 +67,8 @@ import onegpioRoboHATInsetIconURL from './onegpioRoboHAT/onegpioRoboHAT-small.pn
 import onegpioRpiPicoImage from './onegpioRpiPico/onegpioRpiPico.png';
 import onegpioRpiPicoInsetIconURL from './onegpioRpiPico/onegpioRpiPico-small.png';
 
-import test1IconURL from './test1/test1.png';
-import test1InsetIconURL from './test/test1-small.svg';
+import exampleExtensionIconURL from './exampleExtension/exampleExtension.png';
+import exampleExtensionInsetIconURL from './exampleExtension/exampleExtension-small.png';
 
 export default [
     {
@@ -450,12 +450,12 @@ export default [
     }
     ,
     {
-        name: 'Test 1',
-        extensionId: 'test1',
-        collaborator: "Maide",
-        iconURL: test1IconURL,
-        insetIconURL: test1InsetIconURL,
-        description: 'test1',
+        name: 'Example Extension',
+        extensionId: 'exampleExtension',
+        collaborator: "Example Collaborator",
+        iconURL: exampleExtensionIconURL,
+        insetIconURL: exampleExtensionInsetIconURL,
+        description: 'exampleExtension',
         featured: true,
         disabled: false,
         internetConnectionRequired: false,
