@@ -260,20 +260,28 @@ Beim Ausführen des Blocks wird der mitgegebene String in der Konsole ausgegeben
 
 
 ## 2. SCRATCH-ERWEITERUNG VERWENDEN <a name="h2-2"></a>
-- [ ] [Starten der Scratch-GUI.](#h1-2)
+- [ ] [Starten der Scratch-GUI.](#h1-2-2)
 
-- [ ] Klicken auf den Button, welcher die Scratch-Erweiterungs-Bibliothek öffnet.
+- [ ] [Aufrufen der Scratch-GUI.](#h1-2-2)
+
+- [ ] Klicken auf den Button, welcher die Scratch-Erweiterungs-Bibliothek öffnet. <br />
 ![exampleExtension-libraryButton.png](/images/exampleExtension-libraryButton.png)
 
-- [ ] Klicken auf die Erweiterung in der Bibliothek.
+- [ ] Klicken auf die Erweiterung in der Bibliothek. <br />
+![exampleExtension-blockLibrary.png](/images/exampleExtension-blockLibrary.png)
 
-- [ ] Ziehen des Blocks der Erweiterung auf die Scratch-Block-Oberfläche.
+- [ ] Ziehen des Blocks der Erweiterung auf die Scratch-Block-Oberfläche in der Scratch-GUI. <br />
+![exampleExtension-blockGUI.png](/images/exampleExtension-blockGUI.png)
 
-- [ ] Optional: Eingeben eines alternativen String über das Textfeld des Blocks.
+- [ ] Optional: Eingeben eines alternativen String über das Textfeld des Blocks. <br />
+![exampleExtension-blockImplementation.png](/images/exampleExtension-blockImplementation.png)
 
-- [ ] Hinzufügen eines Ereignisses, um die Funktion des Blocks auszuführen.
+- [ ] Hinzufügen eines Ereignisses, um die Funktion des Blocks auszuführen. <br />
+![exampleExtension-blockImplementationEvent.png](/images/exampleExtension-blockImplementationEvent.png)
 
-- [ ] Auslösen des Ereignisses.
+- [ ] Auslösen des Ereignisses. <br />
+![exampleExtension-runButton.png](/images/exampleExtension-runButton.png)
 
-- [ ] Optional: Öffnen der Konsole und Überprüfen der Ausgabe.
-(Sollte mit dem String des Blocks übereinstimmen; in diesem Fall `exampleExtension`.)
+- [ ] Optional: Öffnen der Konsole und Überprüfen der Ausgabe. <br />
+(Sollte mit dem String des Blocks übereinstimmen; in diesem Fall `exampleExtension`.) <br />
+![exampleExtension-consoleOutput.png](/images/exampleExtension-consoleOutput.png)
