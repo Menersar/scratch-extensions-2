@@ -1,14 +1,24 @@
 # INHALTSVERZEICHNIS
-1. [Vorwort und Credits](#h0)
-2. [Anleitung](#h1)
-	1. [Entwicklungsumgebung vorbereiten](#h1-1)
-		1. [Raspberry Pi OS](#h1-1-1)
-		2. [Windows 10, 11](#h1-1-2)
-	2. [Scratch-Pakete installieren](#h2)
-	3. [GUI starten](#h3)
-	4. [GUI aufrufen](#h4)
-	5. [Scratch-Block implementieren](#h5)
-	6. [GUI implementieren](#h6)
+[Vorwort und Credits](#h0) <br /> <br />
+[Anleitung](#h1)
+1. [Entwicklungsumgebung vorbereiten](#h1-1)
+	1. [Raspberry Pi OS](#h1-1-1)
+	
+	3. [Windows 10, 11](#h1-1-2)
+
+2. [Scratch ausführen](#h1-2)
+	1. [Scratch-Pakete installieren](#h1-2-1)
+	
+	3. [Scratch-GUI starten](#h1-2-2)
+	
+	5. [Scratch-GUI aufrufen](#h1-2-3)
+
+3. [Scratch-Erweiterung implementieren](#h1-3)
+	1. [Scratch-Block implementieren](#h1-3-1)
+	
+	3. [Scratch-GUI implementieren](#h1-3-2)
+
+[Beispiele](#h2)
 
 # VORWORT UND CREDITS <a name="h0"></a>
 
@@ -89,7 +99,8 @@ yarn add webpack --dev
 - [ ] Herunterladen und Entpacken des GitHub-Repositories `scratch-extension`. <br />
 https://github.com/Menersar/scratch-extensions
 
-## 2. SCRATCH-PAKETE INSTALLIEREN <a name="h2"></a>
+## 2. SCRATCH AUSFÜHREN <a name="h1-2"></a>
+### 2.1. SCRATCH-PAKETE INSTALLIEREN <a name="h1-2-1"></a>
 		
 Installieren und Verbinden von `scratch-vm` und `scratch-gui`, um sie zusammen zu modifizieren und kompilieren zu können. <br />
 (scratch-gui wird als Parent-Projekt festgelegt, scratch-vm wird mit dem Parent verbunden.)
@@ -118,7 +129,7 @@ yarn link scratch-vm
 yarn install
 ```
 
-## 3. GUI STARTEN <a name="h3"></a>
+### 2.2. SCRATCH-GUI STARTEN <a name="h1-2-2"></a>
 
 - [ ] Wechseln in den Ordner [scratch-gui](/scratch-gui).
 ```console	
@@ -134,7 +145,7 @@ yarn start
 
 Bei erfolgreichem Kompilieren wird `Compiled successfully.` im Terminal ausgegeben und der Scratch-Service startet.
 
-## 4. GUI AUFRUFEN <a name="h4"></a>
+### 2.3. SCRATCH-GUI AUFRUFEN <a name="h1-2-3"></a>
 
 - [ ] Aufrufen der Scratch-Oberfläche über folgende Adresse. <br />
 http://localhost:8601
@@ -148,7 +159,8 @@ Die Adresse wird während des Kompilierens mit `Project is running at http://0.0
 Speichern von Änderungen in `scratch-vm` oder `scratch-gui` löst einen Kompilierungsvorgang automatisch aus. <br />
 (Solange der Scratch-Service auf `http://0.0.0.0:8601/` läuft.)
 
-## 5. SCRATCH-BLOCK IMPLEMENTIEREN <a name="h5"></a>
+## 3. SCRATCH-ERWEITERUNG IMPLEMENTIEREN <a name="h1-3"></a>
+### 3.1. SCRATCH-BLOCK IMPLEMENTIEREN <a name="h1-3-1"></a>
 		
 Jede Extension kann einen oder mehrere Blöcke besitzen.
 	
@@ -178,7 +190,7 @@ scratch-vm/src/extension-support/extension-manager.js
 EXTENSION-ID: () => require('../extensions/scratch3_EXTENSION-NAME')
 ```
 
-## 6. GUI IMPLEMENTIEREN <a name="h6"></a>
+### 3.2. SCRATCH-GUI IMPLEMENTIEREN <a name="h1-3-2"></a>
 
 Zur Nutzung der neu implementierten Scratch-Erweiterung muss sie der Erweiterungsbibliothek von Scratch hinzugefügt werden. <br />
 Optional können Bilddateien, zur visuellen Darstellung der neuen Erweiterung in der Scratch-Bibliothek, eingebunden werden. <br />
@@ -205,4 +217,8 @@ scratch-gui/src/lib/libraries/extensions/index.jsx
 
 - [ ] Angeben notwendiger Informationen und Referenzen in der Datei zur Darstellung der neuen Erweiterung in der Scratch-Bibliothek.
 	
-- [ ] [Starten der Scratch-GUI.](#h3)
+- [ ] [Starten der Scratch-GUI.](#h1-2-2)
+
+# BEISPIELE <a name="h2"></a>
+## 3. SCRATCH-ERWEITERUNG IMPLEMENTIEREN <a name="h2-1"></a>
+### 3.1. SCRATCH-BLOCK IMPLEMENTIEREN <a name="h2-1-1"></a>
