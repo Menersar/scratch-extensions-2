@@ -294,16 +294,17 @@ Durch Ausführen des Blocks soll der mitgegebene String in der Konsole ausgegebe
 		<a href="#h1-2-2">Starten der Scratch-GUI.</a>
 	</summary>
 	<br>
-	<p align="center">
+	<p>
 		Konsolen-Befehl: 
 		<br>
-		<img src="/images/exampleExtension-guiStartenCommand.png" style="width: 1920px">
+		<img src="/images/exampleExtension-guiStartenCommand.png" style="width: 1920px" align="center">
 		<br>
 		<br>
 		Erwartete Konsolen-Ausgabe: 
 		<br>
-		<img src="/images/exampleExtension-guiStartenOutput.png" style="width: 1920px">
+		<img src="/images/exampleExtension-guiStartenOutput.png" style="width: 1920px" align="center">
 	</p>
+	<br>
 </details>
 
 <details>
@@ -311,11 +312,12 @@ Durch Ausführen des Blocks soll der mitgegebene String in der Konsole ausgegebe
 		<a href="#h1-2-3">Aufrufen der Scratch-GUI.</a>
 	</summary>
 	<br>
-	<p  align="center">
+	<p>
 		Adresse der Scratch-Oberfläche: 
 		<br>
-		<img src="/images/exampleExtension-guiAufrufen.png" style="width: 1920px">
+		<img src="/images/exampleExtension-guiAufrufen.png" style="width: 1920px" align="center">
 	</p>
+	<br>
 </details>
 
 <details>
