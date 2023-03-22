@@ -18,11 +18,14 @@
 	
 	2. [Scratch-GUI implementieren](#h1-3-2)
 
-[Beispiele](#h2)
+[Beispiel](#h2)
 1. [Scratch-Erweiterung implementieren](#h2-1)
 	1. [Scratch-Block implementieren](#h2-1-1)
 
-	3. jjhjh
+	2. [Scratch-GUI implementieren](#h2-1-2)
+2. [Scratch-Erweiterung verwenden](#h2-2)
+
+<br />
 
 # VORWORT UND CREDITS <a name="h0"></a>
 
@@ -34,6 +37,8 @@ https://medium.com/@hiroyuki.osaki/how-to-develop-your-own-block-for-scratch-3-0
 
 Folgendes Repository wurde als Grundlage der Pakete `scratch-vm` und `scratch-gui` sowie für Tests neuer Scratch-Erweiterungen verwendet. <br />
 https://github.com/MrYsLab/s3onegpio
+
+<br />
 
 # ANLEITUNG <a name="h1"></a>
 
@@ -103,6 +108,8 @@ yarn add webpack --dev
 - [ ] Herunterladen und Entpacken des GitHub-Repositories `scratch-extension`. <br />
 https://github.com/Menersar/scratch-extensions
 
+<br />
+
 ## 2. SCRATCH AUSFÜHREN <a name="h1-2"></a>
 ### 2.1. SCRATCH-PAKETE INSTALLIEREN <a name="h1-2-1"></a>
 		
@@ -133,6 +140,8 @@ yarn link scratch-vm
 yarn install
 ```
 
+<br />
+
 ### 2.2. SCRATCH-GUI STARTEN <a name="h1-2-2"></a>
 
 - [ ] Wechseln in den Ordner [scratch-gui](/scratch-gui).
@@ -149,6 +158,8 @@ yarn start
 
 Bei erfolgreichem Kompilieren wird `Compiled successfully.` im Terminal ausgegeben und der Scratch-Service startet.
 
+<br />
+
 ### 2.3. SCRATCH-GUI AUFRUFEN <a name="h1-2-3"></a>
 
 - [ ] Aufrufen der Scratch-Oberfläche über folgende Adresse. <br />
@@ -162,6 +173,8 @@ Die Adresse wird während des Kompilierens mit `Project is running at http://0.0
 
 Speichern von Änderungen in `scratch-vm` oder `scratch-gui` löst einen Kompilierungsvorgang automatisch aus. <br />
 (Solange der Scratch-Service auf `http://0.0.0.0:8601/` läuft.)
+
+<br />
 
 ## 3. SCRATCH-ERWEITERUNG IMPLEMENTIEREN <a name="h1-3"></a>
 ### 3.1. SCRATCH-BLOCK IMPLEMENTIEREN <a name="h1-3-1"></a>
@@ -194,6 +207,8 @@ scratch-vm/src/extension-support/extension-manager.js
 EXTENSION-ID: () => require('../extensions/scratch3_EXTENSION-NAME')
 ```
 
+<br />
+
 ### 3.2. SCRATCH-GUI IMPLEMENTIEREN <a name="h1-3-2"></a>
 
 Zur Nutzung der neu implementierten Scratch-Erweiterung muss sie der Erweiterungsbibliothek von Scratch hinzugefügt werden. <br />
@@ -223,9 +238,11 @@ scratch-gui/src/lib/libraries/extensions/index.jsx
 	
 - [ ] [Starten der Scratch-GUI.](#h1-2-2)
 
-# BEISPIELE <a name="h2"></a>
-## 1. SCRATCH-ERWEITERUNG IMPLEMENTIEREN <a name="h2-1"></a>
-Als Beispiel dient die folgende Implementierung eines Scratch-Moduls – `exampleExtension`.
+<br />
+
+# BEISPIEL <a name="h2"></a>
+
+Als Beispiel dient die folgende Implementierung und Verwendung des Scratch-Moduls `exampleExtension`.
 
 Die implementierte Erweiterung ist in der Scratch-Erweiterungsbibliothek, inklusive Icons, aufgeführt.
 
@@ -233,7 +250,9 @@ Wird sie ausgewählt, erscheint sie in der Scratch-Oberfläche.
 
 Der implementierte Block kann in die Scratch-Oberfläche gezogen und ein String angegeben werden.
 
-Beim Ausführen des Blocks wird der mitgegebene String in der Konsole ausgegeben.
+Durch Ausführen des Blocks wird der mitgegebene String in der Konsole ausgegeben.
+
+## 1. SCRATCH-ERWEITERUNG IMPLEMENTIEREN <a name="h2-1"></a>
 
 ### 1.1. SCRATCH-BLOCK IMPLEMENTIEREN <a name="h2-1-1"></a>
 
@@ -247,7 +266,7 @@ Beim Ausführen des Blocks wird der mitgegebene String in der Konsole ausgegeben
 
 - [ ] Abändern: Erweiterung hinzufügen in der [Datei](/scratch-vm/src/extension-support/extension-manager.js). <br />
 
-### 1.2. SCRATCH-GUI IMPLEMENTIEREN <a name="h2-1-1"></a>
+### 1.2. SCRATCH-GUI IMPLEMENTIEREN <a name="h2-1-2"></a>
 
 - [ ] Optional: Hinzufügen: Ordner `exampleExtension` in [/scratch-gui/src/lib/libraries/extensions](/scratch-gui/src/lib/libraries/extensions). <br />
 
@@ -258,16 +277,18 @@ Beim Ausführen des Blocks wird der mitgegebene String in der Konsole ausgegeben
 
 - [ ] Abändern: Angaben zur Darstellung der Erweiterung in der Scratch-Bibliothek hinzufügen in der [Datei](scratch-gui/src/lib/libraries/extensions/index.jsx).
 
-
 ## 2. SCRATCH-ERWEITERUNG VERWENDEN <a name="h2-2"></a>
-- [ ] [Starten der Scratch-GUI.](#h1-2-2)
+- [ ] [Starten der Scratch-GUI.](#h1-2-2) <br />
+![exampleExtension-guiStartenCommand.png](/images/exampleExtension-guiStartenCommand.png)
+![exampleExtension-guiStartenOutput.png](/images/exampleExtension-guiStartenOutput.png)
 
-- [ ] [Aufrufen der Scratch-GUI.](#h1-2-3)
+- [ ] [Aufrufen der Scratch-GUI.](#h1-2-3) <br />
+![exampleExtension-guiAufrufen.png](/images/exampleExtension-guiAufrufen.png)
 
-- [ ] Klicken auf den Button, welcher die Scratch-Erweiterungs-Bibliothek öffnet. <br />
+- [ ] Klicken des Buttons, welcher die Scratch-Erweiterungs-Bibliothek öffnet. <br />
 ![exampleExtension-libraryButton.png](/images/exampleExtension-libraryButton.png)
 
-- [ ] Klicken auf die Erweiterung in der Bibliothek. <br />
+- [ ] Auswählen der Erweiterung in der Bibliothek. <br />
 ![exampleExtension-blockLibrary.png](/images/exampleExtension-blockLibrary.png)
 
 - [ ] Ziehen des Blocks der Erweiterung auf die Scratch-Block-Oberfläche in der Scratch-GUI. <br />
