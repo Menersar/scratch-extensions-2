@@ -180,9 +180,8 @@ EXTENSION-ID: () => require('../extensions/scratch3_EXTENSION-NAME')
 
 ## 6. GUI IMPLEMENTIEREN <a name="h6"></a>
 
-Zur Nutzung der neu implementierten Scratch-Erweiterung muss sie in die Erweiterungsbibliothek von Scratch hinzugefügt werden. <br />
+Zur Nutzung der neu implementierten Scratch-Erweiterung muss sie der Erweiterungsbibliothek von Scratch hinzugefügt werden. <br />
 Optional können Bilddateien, zur visuellen Darstellung der neuen Erweiterung in der Scratch-Bibliothek, eingebunden werden. <br />
-<br />
 
 - [ ] Optional: Hinzufügen des Ordners `EXTENSION-NAME` dem folgenden [Pfad](/scratch-gui/src/lib/libraries/extensions). <br />
 (Statt `EXTENSION-NAME` den Namen der neuen Erweiterung angeben.) <br />
