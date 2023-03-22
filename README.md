@@ -27,11 +27,6 @@ https://github.com/MrYsLab/s3onegpio
 
 ### – RASPBERRY-PI-OS – <a name="h1-1-1"></a>
 	
-- [ ] Installieren des `nvm`-Version-Managers.	
-```console
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-```
-
 - [ ] Optional: Bereinigen des `npm`-Cache und Entfernen von `NodeJS` und `npm` vom System.
 ```console
 sudo npm cache clean --force
@@ -175,7 +170,7 @@ scratch-vm/src/extensions/scratch3_EXTENSION-NAME/index.js
 scratch-vm/src/extension-support/extension-manager.js
 ```
 
-- [ ] Hinzufügen der neuen Erweiterung dem Projekt, über `EXTENSION-ID: () => require ('EXTENSION-RELATIVE-PATH')`, in der Datei. <br />
+- [ ] Hinzufügen der neuen Erweiterung, über die Zeile `EXTENSION-ID: () => require ('EXTENSION-RELATIVE-PATH')`, in der Datei. <br />
 (Statt `EXTENSION-ID` die ID der neuen Extension (aus `index.js`) angeben.) <br />
 (Statt `EXTENSION-RELATIVE-PATH` den Pfad zu `scratch3_EXTENSION-NAME` angeben.) <br />
 (Statt `EXTENSION-NAME` den Namen der neuen Erweiterung angeben.)
@@ -195,7 +190,7 @@ Optional können Bilddateien, zur visuellen Darstellung der neuen Erweiterung in
 scratch-gui/src/lib/libraries/extensions/EXTENSION-NAME
 ```
 
-- [ ] Optional: Platzieren der Bilddateien `EXTENSION-NAME.IMAGE-FORMAT` und `EXTENSION-NAME-small.IMAGE-FORMAT` im neuen Ordnder. <br />
+- [ ] Optional: Platzieren der Bilddateien `EXTENSION-NAME.IMAGE-FORMAT` und `EXTENSION-NAME-small.IMAGE-FORMAT` im neuen Ordner. <br />
 (Hintergrund: `EXTENSION-NAME.IMAGE-FORMAT`, `600 x 372`; Icon: `EXTENSION-NAME-small.IMAGE-FORMAT`, `180 x 180`.) <br />
 (Statt `EXTENSION-NAME` Namen der neuen Erweiterung angeben.) <br />
 (Statt `IMAGE-FORMAT` Format der jeweiligen Bilddatei angeben; getestete Formate: `png`, `jpg` und `svg`.) <br />
