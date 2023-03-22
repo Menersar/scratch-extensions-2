@@ -238,6 +238,7 @@ Beim Ausführen des Blocks wird der mitgegebene String in der Konsole ausgegeben
 ### 1.1. SCRATCH-BLOCK IMPLEMENTIEREN <a name="h2-1-1"></a>
 
 - [ ] Hinzufügen: Ordner `scratch3_exampleExtension` in [/scratch-vm/src/extensions/](/scratch-vm/src/extensions).
+![image](https://user-images.githubusercontent.com/48289383/226799195-760d72e3-45e9-455d-8805-a14ebfe8e8a7.png)
 
 - [ ] Hinzufügen: Datei `index.js` in dem [Ordner](/scratch-vm/src/extensions/scratch3_exampleExtension). <br />
 
