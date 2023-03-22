@@ -294,7 +294,7 @@ Durch Ausführen des Blocks soll der mitgegebene String in der Konsole ausgegebe
 		<a href="#h1-2-2">Starten der Scratch-GUI.</a>
 	</summary>
 	<br>
-	<p>
+	<p align="center">
 		Konsolen-Befehl: 
 		<br>
 		<img src="/images/exampleExtension-guiStartenCommand.png" style="width: 1920px">
@@ -312,7 +312,9 @@ Durch Ausführen des Blocks soll der mitgegebene String in der Konsole ausgegebe
 	</summary>
 	<br>
 	<p  align="center">
-		<img src="/images/exampleExtension-guiAufrufen.png" style="width: 25%">
+		Adresse der Scratch-Oberfläche: 
+		<br>
+		<img src="/images/exampleExtension-guiAufrufen.png" style="width: 1920px">
 	</p>
 </details>
 
