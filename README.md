@@ -1,31 +1,42 @@
+<!-- <details open> -->
+<details>
+ <summary>
+
 # INHALTSVERZEICHNIS
-[Vorwort und Credits](#h0) <br /> <br />
-[Anleitung](#h1)
-1. [Entwicklungsumgebung vorbereiten](#h1-1)
-	1. [Raspberry Pi OS](#h1-1-1)
-	
-	2. [Windows 10, 11](#h1-1-2)
 
-2. [Scratch ausführen](#h1-2)
-	1. [Scratch-Pakete installieren](#h1-2-1)
-	
-	2. [Scratch-GUI starten](#h1-2-2)
-	
-	3. [Scratch-GUI aufrufen](#h1-2-3)
-
-3. [Scratch-Erweiterung implementieren](#h1-3)
-	1. [Scratch-Block implementieren](#h1-3-1)
-	
-	2. [Scratch-GUI implementieren](#h1-3-2)
-
-[Beispiel](#h2)
-1. [Scratch-Erweiterung implementieren](#h2-1)
-	1. [Scratch-Block implementieren](#h2-1-1)
-
-	2. [Scratch-GUI implementieren](#h2-1-2)
-2. [Scratch-Erweiterung verwenden](#h2-2)
-
-<br />
+</summary>
+	<ol>
+		<li><a href="#h0">Vorwort und Credits</a></li>
+		<li><a href="#h1">Anleitung</a></li>
+		<ol>
+			<li><a href="#h1-1">Entwicklungsumgebung vorbereiten</a></li>
+			<ol>
+				<li><a href="#h1-1-1">Raspberry Pi OS</a></li>
+				<li><a href="#h1-1-2">Windows 10, 11</a></li>
+			</ol>
+			<li><a href="#h1-2">Scratch ausführen</a></li>
+			<ol>
+				<li><a href="#h1-2-1">Scratch-Pakete installieren</a></li>
+				<li><a href="#h1-2-2">Scratch-GUI starten</a></li>
+				<li><a href="#h1-2-3">Scratch-GUI aufrufen</a></li>
+			</ol>
+			<li><a href="#h1-3">Scratch-Erweiterung implementieren</a></li>
+			<ol>
+				<li><a href="#h1-3-1">Scratch-Block implementieren</a></li>
+				<li><a href="#h1-3-2">Scratch-GUI implementieren</a></li>
+			</ol>
+		</ol>
+		<li><a href="#h2">Beispiel</a></li>
+		<ol>
+			<li><a href="#h2-1">Scratch-Erweiterung implementieren</a></li>
+			<ol>
+				<li><a href="#h2-1-1">Scratch-Block implementieren</a></li>
+				<li><a href="#h2-1-2">Scratch-GUI implementieren</a></li>
+			</ol>
+			<li><a href="#h2-2">Scratch-Erweiterung verwenden</a></li>
+		</ol>
+	<ol>
+</details>
 
 # VORWORT UND CREDITS <a name="h0"></a>
 
