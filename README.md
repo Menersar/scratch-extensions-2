@@ -39,7 +39,7 @@
 </details>
 
 
-<details open>
+<details>
 <summary>
 
 # VORWORT UND CREDITS <a name="h0"></a>
