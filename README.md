@@ -1,6 +1,6 @@
 <!-- <details open> -->
 <details>
- <summary>
+<summary>
 
 # INHALTSVERZEICHNIS
 
@@ -38,20 +38,32 @@
 	<ol>
 </details>
 
+
+<details open>
+<summary>
+
 # VORWORT UND CREDITS <a name="h0"></a>
-
-Da ich bei allen Anleitungen und Dokumentationen zur Erstellung von Scratch-3-Erweiterungen auf diverse Probleme und Fehler, meist aufgrund diverser Paket-Inkompatibilitäten und veralteten Anleitungen, gestoßen bin, habe ich nach Eigenrecherche die folgende Anleitung zur Erstellung von Scratch-3-Erweiterungen zusammengetragen.
-
+		
+</summary>
+Da ich bei allen Anleitungen und Dokumentationen zur Erstellung von Scratch-3-Erweiterungen auf diverse Probleme und Fehler, meist aufgrund diverser Paket-Inkompatibilitäten und veralteten Anleitungen, gestoßen bin, habe ich nach Eigenrecherche die folgende Anleitung zur Erstellung von Scratch-3-Erweiterungen zusammengetragen. 
+<br />
+<br />
 Den Großteil der Informationen zur Erstellung dieser Anleitung sind der folgenden Seite entnommen. <br />
 https://medium.com/@hiroyuki.osaki/how-to-develop-your-own-block-for-scratch-3-0-1b5892026421
-
-
+<br />
+<br />
 Folgendes Repository wurde als Grundlage der Pakete `scratch-vm` und `scratch-gui` sowie für Tests neuer Scratch-Erweiterungen verwendet. <br />
 https://github.com/MrYsLab/s3onegpio
+	
+</details>
 
-<br />
+
+<details open>
+<summary>
 
 # ANLEITUNG <a name="h1"></a>
+
+</summary>
 
 ## 1. ENTWICKLUNGSUMGEBUNG VORBEREITEN <a name="h1-1"></a>
 
@@ -249,10 +261,15 @@ scratch-gui/src/lib/libraries/extensions/index.jsx
 	
 - [ ] [Starten der Scratch-GUI.](#h1-2-2)
 
-<br />
+</details>
+
+	
+<details open>
+<summary>
 
 # BEISPIEL <a name="h2"></a>
 
+</summary>
 Als Beispiel dient die folgende Implementierung und Verwendung des Scratch-Moduls `exampleExtension`.
 
 Die implementierte Erweiterung soll in der Scratch-Erweiterungsbibliothek, inklusive Beispiel-Icons, aufgeführt werden.
@@ -388,4 +405,6 @@ Durch Ausführen des Blocks soll der mitgegebene String in der Konsole ausgegebe
 	<p  align="center">
 		<img src="/images/exampleExtension-consoleOutput.png" style="width: 25%">
 	</p>
+</details>
+
 </details>
