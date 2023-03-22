@@ -45,6 +45,7 @@
 # VORWORT UND CREDITS <a name="h0"></a>
 		
 </summary>
+
 Da ich bei allen Anleitungen und Dokumentationen zur Erstellung von Scratch-3-Erweiterungen auf diverse Probleme und Fehler, meist aufgrund diverser Paket-Inkompatibilitäten und veralteten Anleitungen, gestoßen bin, habe ich nach Eigenrecherche die folgende Anleitung zur Erstellung von Scratch-3-Erweiterungen zusammengetragen. 
 <br />
 <br />
@@ -270,6 +271,7 @@ scratch-gui/src/lib/libraries/extensions/index.jsx
 # BEISPIEL <a name="h2"></a>
 
 </summary>
+
 Als Beispiel dient die folgende Implementierung und Verwendung des Scratch-Moduls `exampleExtension`.
 
 Die implementierte Erweiterung soll in der Scratch-Erweiterungsbibliothek, inklusive Beispiel-Icons, aufgeführt werden.
