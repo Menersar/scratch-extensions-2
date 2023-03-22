@@ -278,33 +278,99 @@ Durch Ausführen des Blocks soll der mitgegebene String in der Konsole ausgegebe
 - [ ] Abändern: Angaben zur Darstellung der Erweiterung in der Scratch-Bibliothek hinzufügen in der [Datei](scratch-gui/src/lib/libraries/extensions/index.jsx).
 
 ## 2. SCRATCH-ERWEITERUNG VERWENDEN <a name="h2-2"></a>
-- [ ] [Starten der Scratch-GUI.](#h1-2-2) <br />
-<img src="images/exampleExtension-guiStartenCommand.png" width="400">
-<img src="/images/exampleExtension-guiStartenOutput.png" width="400">
+<details>
+	<summary>
+		<a href="#h1-2-2">Starten der Scratch-GUI.</a>
+	</summary>
+	<br>
+	<p>
+		Konsolen-Befehl: 
+		<br>
+		<img src="/images/exampleExtension-guiStartenCommand.png" style="width: 1920px">
+		<br>
+		<br>
+		Erwartete Konsolen-Ausgabe: 
+		<br>
+		<img src="/images/exampleExtension-guiStartenOutput.png" style="width: 1920px">
+	</p>
+</details>
 
-- [ ] [Aufrufen der Scratch-GUI.](#h1-2-3) <br />
-<img src="/images/exampleExtension-guiAufrufen.png" width="500">
+<details>
+	<summary>
+		<a href="#h1-2-3">Aufrufen der Scratch-GUI.</a>
+	</summary>
+	<br>
+	<p  align="center">
+		<img src="/images/exampleExtension-guiAufrufen.png" style="width: 25%">
+	</p>
+</details>
 
-<img src="/images/exampleExtension-guiAufrufen.png" onmouseover="this.src='/images/exampleExtension-blockGUI.png'" onmouseout="this.src='/images/exampleExtension-guiAufrufen.png'" /> 
+<details>
+	<summary>
+		Öffnen der Scratch-Erweiterungs-Bibliothek über den Button unten links in der Scratch-GUI.
+	</summary>
+	<br>
+	<p  align="center">
+		<img src="/images/exampleExtension-libraryButton.png" style="width: 10%">
+	</p>
+</details>
 
-- [ ] Klicken des Buttons, welcher die Scratch-Erweiterungs-Bibliothek öffnet. <br />
-<img src="/images/exampleExtension-libraryButton.png" width="400">
+<details>
+	<summary>
+		Auswählen der Erweiterung in der Bibliothek.
+	</summary>
+	<br>
+	<p  align="center">
+		<img src="/images/exampleExtension-blockLibrary.png" style="width: 25%">
+	</p>
+</details>
 
-- [ ] Auswählen der Erweiterung in der Bibliothek. <br />
-<img src="/images/exampleExtension-blockLibrary.png" width="400">
+<details>
+	<summary>
+		Ziehen des Blocks der Erweiterung auf die Scratch-Block-Oberfläche in der Scratch-GUI.
+	</summary>
+	<br>
+	<p  align="center">
+		<img src="/images/exampleExtension-blockGUI.png" style="width: 25%">
+	</p>
+</details>
 
-- [ ] Ziehen des Blocks der Erweiterung auf die Scratch-Block-Oberfläche in der Scratch-GUI. <br />
-<img src="/images/exampleExtension-blockGUI.png" width="400">
+<details>
+	<summary>
+		Optional: Eingeben eines alternativen String über das Textfeld des Blocks.
+	</summary>
+	<br>
+	<p  align="center">
+		<img src="/images/exampleExtension-blockImplementation.png" style="width: 25%">
+	</p>
+</details>
 
-- [ ] Optional: Eingeben eines alternativen String über das Textfeld des Blocks. <br />
-<img src="/images/exampleExtension-blockImplementation.png" width="400">
+<details>
+	<summary>
+		Hinzufügen eines Ereignisses, um die Funktion des Blocks auszuführen.
+	</summary>
+	<br>
+	<p  align="center">
+		<img src="/images/exampleExtension-blockImplementationEvent.png" style="width: 25%">
+	</p>
+</details>
 
-- [ ] Hinzufügen eines Ereignisses, um die Funktion des Blocks auszuführen. <br />
-<img src="/images/exampleExtension-blockImplementationEvent.png" width="400">
+<details>
+	<summary>
+		Auslösen des Ereignisses.
+	</summary>
+	<br>
+	<p  align="center">
+		<img src="/images/exampleExtension-runButton.png" style="width: 25%">
+	</p>
+</details>
 
-- [ ] Auslösen des Ereignisses. <br />
-<img src="/images/exampleExtension-runButton.png" width="400">
-
-- [ ] Optional: Öffnen der Konsole und Überprüfen der Ausgabe. <br />
-(Sollte mit dem String des Blocks übereinstimmen; in diesem Fall `exampleExtension`.) <br />
-<img src="/images/exampleExtension-consoleOutput.png" width="400">
+<details>
+	<summary>
+		Optional: Öffnen der Konsole und Überprüfen der Ausgabe.
+	</summary>
+	<br>
+	<p  align="center">
+		<img src="/images/exampleExtension-consoleOutput.png" style="width: 25%">
+	</p>
+</details>
