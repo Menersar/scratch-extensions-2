@@ -244,13 +244,13 @@ scratch-gui/src/lib/libraries/extensions/index.jsx
 
 Als Beispiel dient die folgende Implementierung und Verwendung des Scratch-Moduls `exampleExtension`.
 
-Die implementierte Erweiterung ist in der Scratch-Erweiterungsbibliothek, inklusive Icons, aufgeführt.
+Die implementierte Erweiterung soll in der Scratch-Erweiterungsbibliothek, inklusive Beispiel-Icons, aufgeführt werden.
 
-Wird sie ausgewählt, erscheint sie in der Scratch-Oberfläche.
+Durch Ausgewählen soll sie mit einem implementieren Block in der Scratch-Oberfläche erscheinen.
 
-Der implementierte Block kann in die Scratch-Oberfläche gezogen und ein String angegeben werden.
+Der Block soll in die Scratch-Oberfläche gezogen und ein String angegeben werden.
 
-Durch Ausführen des Blocks wird der mitgegebene String in der Konsole ausgegeben.
+Durch Ausführen des Blocks soll der mitgegebene String in der Konsole ausgegeben werden.
 
 ## 1. SCRATCH-ERWEITERUNG IMPLEMENTIEREN <a name="h2-1"></a>
 
