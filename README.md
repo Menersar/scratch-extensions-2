@@ -258,4 +258,22 @@ Beim Ausführen des Blocks wird der mitgegebene String in der Konsole ausgegeben
 
 - [ ] Abändern: Angaben zur Darstellung der Erweiterung in der Scratch-Bibliothek hinzufügen in der [Datei](scratch-gui/src/lib/libraries/extensions/index.jsx).
 
-- [ ] [Starten der Scratch-GUI.](#h1-2-2)
+
+## 2. SCRATCH-ERWEITERUNG VERWENDEN <a name="h2-2"></a>
+- [ ] [Starten der Scratch-GUI.](#h1-2)
+
+- [ ] Klicken auf den Button, welcher die Scratch-Erweiterungs-Bibliothek öffnet.
+![exampleExtension-libraryButton.png](/images/exampleExtension-libraryButton.png)
+
+- [ ] Klicken auf die Erweiterung in der Bibliothek.
+
+- [ ] Ziehen des Blocks der Erweiterung auf die Scratch-Block-Oberfläche.
+
+- [ ] Optional: Eingeben eines alternativen String über das Textfeld des Blocks.
+
+- [ ] Hinzufügen eines Ereignisses, um die Funktion des Blocks auszuführen.
+
+- [ ] Auslösen des Ereignisses.
+
+- [ ] Optional: Öffnen der Konsole und Überprüfen der Ausgabe.
+(Sollte mit dem String des Blocks übereinstimmen; in diesem Fall `exampleExtension`.)
