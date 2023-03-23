@@ -19,6 +19,7 @@
 				<li><a href="#h1-2-1">Scratch-Pakete installieren</a></li>
 				<li><a href="#h1-2-2">Scratch-GUI starten</a></li>
 				<li><a href="#h1-2-3">Scratch-GUI aufrufen</a></li>
+				<li><a href="#h1-2-4">Scratch-GUI builden</a></li>
 			</ol>
 			<li><a href="#h1-3">Scratch-Erweiterung implementieren</a></li>
 			<ol>
