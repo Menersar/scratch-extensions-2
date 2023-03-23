@@ -55,6 +55,10 @@ https://medium.com/@hiroyuki.osaki/how-to-develop-your-own-block-for-scratch-3-0
 <br />
 Folgendes Repository wurde als Grundlage der Pakete `scratch-vm` und `scratch-gui` sowie für Tests neuer Scratch-Erweiterungen verwendet. <br />
 https://github.com/MrYsLab/s3onegpio
+<br />
+<br />
+Die Informationen der folgenden offiziellen Anleitung zum Publishen der Scratch-GUI auf GitHub-Pages wurden für die Erstellung eines Builds, zum Ausführen von Scratch im Offline-Modus, verwendet. <br />
+https://github.com/LLK/scratch-gui/wiki/Publishing-to-GitHub-Pages
 	
 </details>
 
@@ -197,6 +201,41 @@ Die Adresse wird während des Kompilierens mit `Project is running at http://0.0
 
 Speichern von Änderungen in `scratch-vm` oder `scratch-gui` löst einen Kompilierungsvorgang automatisch aus. <br />
 (Solange der Scratch-Service auf `http://0.0.0.0:8601/` läuft.)
+
+<br />
+- [ ] Optional: Aufrufen der Scratch-GUI über einen erstellten [Scratch-GUI-Build](#h1-2-4). <br />
+(Über die erzeugte `index.html` in [/scratch-gui/build](/scratch-gui/build).)
+
+<br />
+
+### 2.4. SCRATCH-GUI BUILDEN <a name="h1-2-4"></a>
+
+- [ ] Wechseln in den Ordner [scratch-gui](/scratch-gui).
+```console	
+cd scratch-gui
+```
+
+- [ ] Erstellen eines Builds für github.io. <br />
+(Dieser ist zu finden unter `/scratch-gui/build`.) <br />
+(Über die Datei `index.html` in dem [Ordner](/scratch-gui/build) ist Scratch mit den Erweiterungen offline aufrufbar.)
+```console
+yarn run build
+```
+
+- [ ] Erzeugen eines Commits und Pushs des Builds auf den eigenen GitHub-Pages-Branch. <br />
+(Er sollte dann über `https://USER-NAME.github.io/scratch-gui/` einzusehen sein.) <br />
+(Statt `USER-NAME` den Namen des GitHub-Benutzers des GitHub-Pages-Branchs angeben.)
+```console
+npm run deploy
+```
+
+- [ ] Optional: Publishen des Builds in ein bestimmtes Verzeichnis. <br />
+(Er ist dann über `https://USER-NAME.github.io/scratch-gui/.BRANCH-NAME` aufrufbar.) <br />
+(Statt `USER-NAME` den Namen des GitHub-Benutzers des GitHub-Pages-Branchs angeben.) <br />
+(Statt `BRANCH-NAME` den Namen des Branches, auf dem gepublished werden soll, angeben.)
+```console
+npm run deploy -- -e BRANCH-NAME
+```
 
 <br />
 
