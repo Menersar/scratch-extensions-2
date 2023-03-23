@@ -224,14 +224,14 @@ cd scratch-gui
 yarn run build
 ```
 
-- [ ] Erzeugen eines Commits und Pushs des Builds auf den eigenen GitHub-Pages-Branch. <br />
+- [ ] Optional: Erzeugen eines Commits und Pushs des Builds auf den eigenen GitHub-Pages-Branch. <br />
 (Er sollte dann über `https://USER-NAME.github.io/scratch-gui/` einzusehen sein.) <br />
 (Statt `USER-NAME` den Namen des GitHub-Benutzers des GitHub-Pages-Branchs angeben.)
 ```console
 npm run deploy
 ```
 
-- [ ] Optional: Publishen des Builds in ein bestimmtes Verzeichnis. <br />
+- [ ] Alternativ, Optional: Publishen des Builds in ein bestimmtes Verzeichnis. <br />
 (Er ist dann über `https://USER-NAME.github.io/scratch-gui/.BRANCH-NAME` aufrufbar.) <br />
 (Statt `USER-NAME` den Namen des GitHub-Benutzers des GitHub-Pages-Branchs angeben.) <br />
 (Statt `BRANCH-NAME` den Namen des Branches, auf dem gepublished werden soll, angeben.)
