@@ -193,7 +193,6 @@ Bei erfolgreichem Kompilieren wird `Compiled successfully.` im Terminal ausgegeb
 - [ ] Aufrufen der Scratch-Oberfläche über folgende Adresse. <br />
 http://localhost:8601
 
-<br />
 
 Die Adresse wird während des Kompilierens mit `Project is running at http://0.0.0.0:8601/` im Terminal ausgegeben.
 
