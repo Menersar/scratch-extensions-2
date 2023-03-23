@@ -1,3 +1,6 @@
+// Inhalt index.jsx:
+// Definitionen und Deklarationen der Einträge der Scratch-Erweiterungsbibliothek
+
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 
@@ -69,6 +72,9 @@ import onegpioRpiPicoInsetIconURL from './onegpioRpiPico/onegpioRpiPico-small.pn
 
 import exampleExtensionIconURL from './exampleExtension/exampleExtension.png';
 import exampleExtensionInsetIconURL from './exampleExtension/exampleExtension-small.png';
+
+import test1IconURL from './test1/test1.png';
+import test1InsetIconURL from './test1/test1-small.png';
 
 export default [
     {
@@ -450,12 +456,27 @@ export default [
     }
     ,
     {
-        name: 'Example Extension',
+        name: 'Extention Library Name',
         extensionId: 'exampleExtension',
-        collaborator: "Example Collaborator",
+        collaborator: "Extention Library Collaborator",
         iconURL: exampleExtensionIconURL,
         insetIconURL: exampleExtensionInsetIconURL,
-        description: 'exampleExtension',
+        description: 'Extention Library Description',
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: false,
+        bluetoothRequired: false,
+        helpLink: 'https://github.com/Menersar/scratch-extensions'
+
+    }
+    ,
+    {
+        name: 'Test 1 Name scratch-gui index-jsx',
+        extensionId: 'test1',
+        collaborator: "Test 1 Collaborator scratch-gui index-jsx",
+        iconURL: test1IconURL,
+        insetIconURL: test1InsetIconURL,
+        description: 'test 1 description scratch-gui index-jsx',
         featured: true,
         disabled: false,
         internetConnectionRequired: false,
