@@ -193,7 +193,7 @@ Bei erfolgreichem Kompilieren wird `Compiled successfully.` im Terminal ausgegeb
 - [ ] Aufrufen der Scratch-Oberfläche über folgende Adresse. <br />
 http://localhost:8601
 
-
+<br />
 
 Die Adresse wird während des Kompilierens mit `Project is running at http://0.0.0.0:8601/` im Terminal ausgegeben.
 
@@ -202,6 +202,7 @@ Die Adresse wird während des Kompilierens mit `Project is running at http://0.0
 Speichern von Änderungen in `scratch-vm` oder `scratch-gui` löst einen Kompilierungsvorgang automatisch aus. <br />
 (Solange der Scratch-Service auf `http://0.0.0.0:8601/` läuft.)
 
+<br />
 <br />
 
 - [ ] Optional: Aufrufen der Scratch-GUI über einen erstellten [Scratch-GUI-Build](#h1-2-4). <br />
