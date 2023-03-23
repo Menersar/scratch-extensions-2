@@ -217,12 +217,14 @@ Speichern von Änderungen in `scratch-vm` oder `scratch-gui` löst einen Kompili
 cd scratch-gui
 ```
 
-- [ ] Erstellen eines Builds für github.io. <br />
+- [ ] Erstellen eines Builds für `github.io`. <br />
 (Dieser ist zu finden unter `/scratch-gui/build`.) <br />
 (Über die Datei `index.html` in dem [Ordner](/scratch-gui/build) ist Scratch mit den Erweiterungen offline aufrufbar.)
 ```console
 yarn run build
 ```
+
+<br />
 
 - [ ] Optional: Erzeugen eines Commits und Pushs des Builds auf den eigenen GitHub-Pages-Branch. <br />
 (Er sollte dann über `https://USER-NAME.github.io/scratch-gui/` einzusehen sein.) <br />
