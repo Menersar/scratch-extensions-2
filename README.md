@@ -203,6 +203,7 @@ Speichern von Änderungen in `scratch-vm` oder `scratch-gui` löst einen Kompili
 (Solange der Scratch-Service auf `http://0.0.0.0:8601/` läuft.)
 
 <br />
+
 - [ ] Optional: Aufrufen der Scratch-GUI über einen erstellten [Scratch-GUI-Build](#h1-2-4). <br />
 (Über die erzeugte `index.html` in [/scratch-gui/build](/scratch-gui/build).)
 
