@@ -28,6 +28,13 @@
     "watch": "webpack --progress --colors --watch",
     "version": "json -f package.json -I -e \"this.repository.sha = '$(git log -n1 --pretty=format:%H)'\""
   },
+  "browser": {
+    "fs": false,
+    "child_process": false
+  },
+  "bugs": {
+    "url": "https://github.com/LLK/scratch-vm/issues"
+  },
   "dependencies": {
     "@vernier/godirect": "1.5.0",
     "apollo-cache-inmemory": "^1.6.3",
@@ -63,6 +70,11 @@
     "babel-loader": "^8.0.4",
     "copy-webpack-plugin": "^4.5.4",
     "docdash": "^1.0.0",
+
+
+    "electron-rebuild": "^1.8.5",
+
+
     "eslint": "^5.3.0",
     "eslint-config-scratch": "^5.0.0",
     "expose-loader": "0.7.5",

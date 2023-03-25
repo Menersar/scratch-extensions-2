@@ -32,7 +32,11 @@ const builtinExtensions = {
     onegpioRoboHAT: () => require('../extensions/scratch3_onegpioRoboHAT'),
     onegpioRpiPico: () => require('../extensions/scratch3_onegpioRpiPico'),
     exampleExtension: () => require('../extensions/scratch3_exampleExtension'),
-    test1: () => require('../extensions/scratch3_test1')
+    test1: () => require('../extensions/scratch3_test1'),
+
+    pigpio: () => require('../extensions/scratch3_pigpio'),
+    pisensehat: () => require('../extensions/scratch3_pisensehat'),
+    pivsgpio: () => require('../extensions/scratch3_pivsgpio'),
 
 
 
