@@ -73,8 +73,6 @@ import onegpioRpiPicoInsetIconURL from './onegpioRpiPico/onegpioRpiPico-small.pn
 import exampleExtensionIconURL from './exampleExtension/exampleExtension.png';
 import exampleExtensionInsetIconURL from './exampleExtension/exampleExtension-small.png';
 
-import test1IconURL from './test1/test1.png';
-import test1InsetIconURL from './test1/test1-small.png';
 
 
 import pigpioIconURL from './pigpio/pigpio.png';
@@ -85,6 +83,10 @@ import pisensehatInsetIconURL from './pisensehat/pisensehat-small.svg';
 
 import pivsgpioIconURL from './pivsgpio/pivsgpio.png';
 import pivsgpioInsetIconURL from './pivsgpio/pivsgpio-small.svg';
+
+
+import test1IconURL from './test1/test1.png';
+import test1InsetIconURL from './test1/test1-small.png';
 
 export default [
     {

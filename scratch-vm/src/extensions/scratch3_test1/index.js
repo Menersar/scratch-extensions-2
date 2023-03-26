@@ -388,7 +388,7 @@ Extension Blocks:
                         }
                     }
                 },
-                '---',
+               /* '---',
 
                 ///////////////////////////////////////////////////////
                 {
@@ -419,6 +419,7 @@ Extension Blocks:
                         },
                     }
                 },
+                */
             ],
 
 
@@ -737,7 +738,6 @@ Extension Block Operation Code (Function which implements the Block operations):
                 window.socketr.send(msg);
             }
             return digital_inputs[sonar_report_pin];
-
         }
     }
 
