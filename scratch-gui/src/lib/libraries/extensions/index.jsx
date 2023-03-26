@@ -74,7 +74,6 @@ import exampleExtensionIconURL from './exampleExtension/exampleExtension.png';
 import exampleExtensionInsetIconURL from './exampleExtension/exampleExtension-small.png';
 
 
-
 import pigpioIconURL from './pigpio/pigpio.png';
 import pigpioInsetIconURL from './pigpio/pigpio-small.svg';
 
