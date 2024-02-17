@@ -99,6 +99,14 @@ sudo n 16.0.0
 
 - [ ] Optional: Überprüfen der `NodeJS`-Version. <br />
 (Ausgabe sollte `v16.0.0` zurückgeben.)
+	- [ ] Optional: Wenn die "alte" Version zurückgegeben wird:
+		- Lösung 1: Öffnen eines neuen Terminal-Fensters. <br />
+   		oder
+   		- Lösung 2: Zurücksetzen des 'Location-Hash' mit eines der folgenden Befehle:
+   			- Für 'bash', 'zsh', 'ash', 'dash', und 'ksh': `hash -r` <br />
+     			oder
+   	   		- Für 'csh' und 'tcsh': `rehash`
+
 ```console
 node --version
 ```
