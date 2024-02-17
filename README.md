@@ -80,6 +80,12 @@ sudo npm cache clean --force
 sudo apt remove nodejs npm
 ```
 
+- [ ] Installieren der `Node`-Version, die mit der offiziellen Distibution ausgeliefert wird.
+<!-- (Source: https://allurcode.com/install-any-version-of-nodejs-and-npm-on-raspberry-pi/) -->
+```console
+sudo apt-get install nodejs
+```
+
 - [ ] Installieren des `npm`-Version-Managers, `n`, und damit Neuinstallieren von `NodeJS v16.0.0`.
 ```console
 sudo npm install --global n
