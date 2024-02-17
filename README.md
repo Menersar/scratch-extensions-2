@@ -80,10 +80,15 @@ sudo npm cache clean --force
 sudo apt remove nodejs npm
 ```
 
-- [ ] Installieren der `Node`-Version, die mit der offiziellen Distibution ausgeliefert wird.
-<!-- (Source: https://allurcode.com/install-any-version-of-nodejs-and-npm-on-raspberry-pi/) -->
+- [ ] Installieren der `Node`-Version, die mit der offiziellen Distibution ausgeliefert wird, und `npm` auf dem System.
+	<!-- (Source: https://allurcode.com/install-any-version-of-nodejs-and-npm-on-raspberry-pi/) -->
+ 	- [ ] Optional: Verwenden der Option `--fix-missing`
+ 		- Die Kommandozeilenoption `apt-get --fix-missing` wird in Linux eingesetzt, um während einer Installation oder eines Updates fehlende oder fehlerhafte / beschädigte Pakete zu handhaben.
+   			- Diese Pakete werden zurückgestellt und ermöglicht es, die fehlenden Pakete zu reparieren oder eventuell die Ursache des Problems zu lösen.
+   			- Besonders nützlich in Situationen, in denen Pakete Pakete nicht abgerufen werden können oder bei denen die ntegritätsprüfung fehlgeschlagen ist.
+			<!-- (Source: https://devicetests.com/apt-get-fix-missing) -->	 
 ```console
-sudo apt-get install nodejs
+sudo apt-get install nodejs npm --fix-missing
 ```
 
 - [ ] Installieren des `npm`-Version-Managers, `n`, und damit Neuinstallieren von `NodeJS v16.0.0`.
